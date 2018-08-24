@@ -209,72 +209,14 @@
 
         <h2>My Projects</h2>
 
-        <div class="w3-row">
-
-            <div class="w3-third">
-                <div class="w3-container w3-card-4 w3-margin ">
-                    <img src="img_snowtops.jpg" alt="Norway" style="width:100%" />
-                    <div class="w3-container  w3-center project-title">
-                        <p class="bold">The Italian / Austrian Alps</p>
-                    </div>
-                    <div class="project-description">
-                        et nisl. Vestibulum ac maximus arcu. Ut at tincidunt risus. Aliquam vel diam rhoncus, efficitur tortor ac,
-                        efficitur risus. Cras interdum eget felis in ullamcorper. Suspendisse ac magna rutrum, pharetra urna vitae,
-                        condimentum libero. In libero turpis, ornare ac viverra sed, consectetur quis lectus. Curabitur a dapibus
-                        nibh.
-                    </div>
-                    <div class="project-link">
-                        LINK
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-third">
-                <div class="w3-container w3-card-4 w3-margin ">
-                    <img src="img_snowtops.jpg" alt="Norway" style="width:100%" />
-                    <div class="w3-container  w3-center project-title">
-                        <p class="bold">The Italian / Austrian Alps</p>
-                    </div>
-                    <div class="project-description">
-                        et nisl. Vestibulum ac maximus arcu. Ut at tincidunt risus. Aliquam vel diam rhoncus, efficitur tortor ac,
-                        efficitur risus. Cras interdum eget felis in ullamcorper. Suspendisse ac magna rutrum, pharetra urna vitae,
-                        condimentum libero. In libero turpis, ornare ac viverra sed, consectetur quis lectus. Curabitur a dapibus
-                        nibh.
-                    </div>
-                    <div class="project-link">
-                        LINK
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-third">
-                <div class="w3-container w3-card-4 w3-margin ">
-                    <img src="img_snowtops.jpg" alt="Norway" style="width:100%" />
-                    <div class="w3-container  w3-center project-title">
-                        <p class="bold">The Italian / Austrian Alps</p>
-                    </div>
-                    <div class="project-description">
-                        et nisl. Vestibulum ac maximus arcu. Ut at tincidunt risus. Aliquam vel diam rhoncus, efficitur tortor ac,
-                        efficitur risus. Cras interdum eget felis in ullamcorper. Suspendisse ac magna rutrum, pharetra urna vitae,
-                        condimentum libero. In libero turpis, ornare ac viverra sed, consectetur quis lectus. Curabitur a dapibus
-                        nibh.
-                    </div>
-                    <div class="project-link">
-                        LINK
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
     </div>
 
 </main>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/social.js" defer></script>
+<script src="/js/social.js" async defer></script>
+<script src="/js/projects.js"></script>
 
 <script>
     let displayDetails = function (id) {
@@ -285,6 +227,43 @@
             x.className = x.className.replace(" w3-show", "");
         }
     }
+</script>
+<script>
+    $(document).ready(function () {
+
+        let projectsHTML = "<div class='w3-row'>";
+        let count = 0;
+        for (let i = 0; i < projects.length; i++) {
+            count++;
+            let s = '<div class="w3-third">';
+            s += '<div class="w3-container w3-card-4 w3-yellow w3-margin project">';
+            s += '<img class="project-image" src="/images/transparent.png" title="' + projects[i].name + '" style="width:100%;background:url(\''+  projects[i].img +'\') no-repeat; background-size: cover;background-position: top" />';
+            s += '<div class="w3-container w3-center project-title"> <p class="bold">' + projects[i].name + '</p></div>';
+            s += '<div class="project-description">' + projects[i].info + '</div><br/>';
+            s += '<div class="w3-row"><div class="w3-half"><div class="w3-center w3-blue w3-margin project-link"><a target="_blank" title="Go to link" href="' + projects[i].link + '" ><i class="fas fa-link" style="font-size: 30px;"></i></a></div></div>';
+
+            if (projects[i].hasOwnProperty('repo')) {
+                s += '<div class="w3-half"><div class="w3-center w3-blue w3-margin project-repo"><a target="_blank" title="Go to repo" href="' + projects[i].repo + '"><i class="fab fa-github" style="font-size: 30px;"></i></a></div></div></div>';
+            }else
+            {
+                s += '<div class="w3-half w3-center"></div></div>'
+            }
+
+            s += '</div></div>';
+
+            projectsHTML += s;
+
+            if (count % 3 === 0 || projects.length === i + 1) {
+                projectsHTML += '</div>';
+            }
+
+            if (i + 1 !== projects.length && count % 3 === 0) {
+                projectsHTML += '<div class="w3-row">';
+            }
+        }
+
+        $('#projects').append(projectsHTML);
+    });
 </script>
 </body>
 </html>

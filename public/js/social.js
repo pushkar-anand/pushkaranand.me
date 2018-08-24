@@ -14,11 +14,8 @@ let html = '';
 
 for (let key in socialLinks) {
     if (socialLinks.hasOwnProperty(key)) {
-            let link = '<a target="_blank" rel="noopener nofollow external" class="social-icon" href="' + socialLinks[key] + '" title="'+ key +'" >' +
-                '<i class="fab fa-'+ key + '"></i></a>';
-            console.log(link);
-            html += link;
+        html += '<a target="_blank" rel="noopener nofollow external" class="social-icon" href="' + socialLinks[key] + '" title="' + key + '" >' +
+                '<i class="fab fa-' + key + '"></i></a>';
     }
 }
-console.log(html);
 $('#social').html(html);
