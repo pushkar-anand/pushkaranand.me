@@ -56,7 +56,8 @@ header h1 {
 #side-nav ul {
     list-style: none;
 }
-#side-nav li{
+
+#side-nav li {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     padding: 0;
@@ -64,8 +65,8 @@ header h1 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-weight: bold;
 }
-#side-nav li:hover
-{
+
+#side-nav li:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -77,8 +78,8 @@ header h1 {
     color: #FFFFFF;
     padding: 0.8rem 4rem 0.8rem 2rem;
 }
-#side-nav span
-{
+
+#side-nav span {
     display: block;
     color: rgba(255, 255, 255, 0.5);
     text-transform: lowercase;
@@ -237,29 +238,43 @@ label a {
     text-align: center;
 }*/
 
-#social{
+#social {
     text-align: left;
     font-size: 48px;
     position: absolute;
     bottom: 5%;
     left: 10px
 }
-.social-icon
-{
+
+.social-icon {
     padding: 5px 15px 0 5px;
 }
-#social a{
+
+#social a {
     color: #ffffff;
 }
 
-#about
-{
+#about {
     display: block;
     padding: 5px;
     background: white;
 }
-#about p{
+
+#about p {
     padding-top: 15px;
+}
+
+.skill-list
+{
+    text-align: center;
+}
+
+.skill-list h3
+{
+    padding: 5px;
+    margin-top: 10px;
+    background: rgba(0, 188, 212, 0.44);
+    border-radius: 10px;
 }
 
 
