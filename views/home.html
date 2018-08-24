@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="/css/w3.css" rel="stylesheet" type="text/css" />
+    <link href="/css/w3.css" rel="stylesheet" type="text/css"/>
     <link href="/css/home.css" rel="stylesheet" type="text/css"/>
 
 </head>
@@ -66,8 +66,9 @@
 
     </div>
 </header>
+
 <main>
-    <div class="w3-container" id="about">
+    <div class="w3-container w3-section" id="about">
         <h2>About intro headline</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, nulla quis ornare egestas, odio
             lectus
@@ -95,7 +96,7 @@
 
     <br/><br/><br/><br/>
 
-    <div class="w3-container" id="skills">
+    <div class="w3-container w3-section" id="skills">
         <h2>My Passionate SKILLS</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, nulla quis ornare egestas, odio
             lectus
@@ -150,27 +151,123 @@
 
     </div>
 
-<br/><br/><br/><br/>
+    <br/><br/><br/><br/>
 
-    <div class="w3-container w3-white" id="experience">
+    <div class="w3-container w3-white w3-section" id="experience">
         <h2>My Past EXPERIENCES</h2>
         <div class="w3-row">
-            <div class="w3-container w3-half w3-card-4 w3-teal">
-                <h3>Server Administrator and Web Developer</h3>
-                <h4><a href="https://adversize.in" target="_blank" rel="noopener external">Adversize Pvt. Ltd.</a></h4>
-                <p class="w3-center">March 18 - Present</p>
-                <h4>Tasks undertaken</h4>
-                <ul class="w3-ul">
-                   <li>Desiging a suitable AWS architecture for the stack.</li>
-                    <li>Migration of whole stack to </li>
-                </ul>
+            <div class="w3-half ">
+
+                <div class="w3-container w3-margin w3-card-4 w3-teal inner">
+
+                    <h3>Server Administrator and Web Developer</h3>
+                    <h4><a href="https://adversize.in" target="_blank" rel="noopener external">Adversize Pvt. Ltd.</a>
+                    </h4>
+                    <p class="w3-center">March, 18 - Present</p>
+                    <div>
+                        <button class="w3-button w3-right" onclick="displayDetails('adversize');">Details</button>
+                        <div id="adversize" class="w3-hide w3-animate-zoom">
+                            <h4>Involved in:</h4>
+                            <ul class="w3-ul">
+                                <li>Desiging a suitable AWS architecture for the stack.</li>
+                                <li>Migration of whole stack to AWS.</li>
+                                <li>Using AWS DevOPs tools to automate deployment.</li>
+                                <li>Managing and maintaing AWS EC2 linux instances.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
-            <div class="w3-container w3-half w3-card-4">
+            <div class="w3-half">
 
+                <div class="w3-container w3-margin w3-card-4 w3-yellow inner">
+
+                    <h3>Server Administrator and Web Developer</h3>
+                    <h4><a href="https://omniaparatus.co.in/" target="_blank" rel="noopener external">Omnia Paratus</a>
+                    </h4>
+                    <p class="w3-center">June, 18 - Present</p>
+                    <div>
+                        <button class="w3-button w3-right" onclick="displayDetails('omnia');">Details</button>
+                        <div id="omnia" class="w3-hide w3-animate-zoom">
+                            <h4>Involved in:</h4>
+                            <ul class="w3-ul">
+                                <li>Desiging a suitable AWS architecture for the stack.</li>
+                                <li>Migration of whole stack to AWS.</li>
+                                <li>Using AWS DevOPs tools to automate deployment.</li>
+                                <li>Managing and maintaing AWS EC2 linux instances.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="w3-container w3-section" id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="w3-row">
+
+            <div class="w3-third">
+                <div class="w3-container w3-card-4 w3-margin ">
+                    <img src="img_snowtops.jpg" alt="Norway" style="width:100%" />
+                    <div class="w3-container  w3-center project-title">
+                        <p class="bold">The Italian / Austrian Alps</p>
+                    </div>
+                    <div class="project-description">
+                        et nisl. Vestibulum ac maximus arcu. Ut at tincidunt risus. Aliquam vel diam rhoncus, efficitur tortor ac,
+                        efficitur risus. Cras interdum eget felis in ullamcorper. Suspendisse ac magna rutrum, pharetra urna vitae,
+                        condimentum libero. In libero turpis, ornare ac viverra sed, consectetur quis lectus. Curabitur a dapibus
+                        nibh.
+                    </div>
+                    <div class="project-link">
+                        LINK
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-container w3-card-4 w3-margin ">
+                    <img src="img_snowtops.jpg" alt="Norway" style="width:100%" />
+                    <div class="w3-container  w3-center project-title">
+                        <p class="bold">The Italian / Austrian Alps</p>
+                    </div>
+                    <div class="project-description">
+                        et nisl. Vestibulum ac maximus arcu. Ut at tincidunt risus. Aliquam vel diam rhoncus, efficitur tortor ac,
+                        efficitur risus. Cras interdum eget felis in ullamcorper. Suspendisse ac magna rutrum, pharetra urna vitae,
+                        condimentum libero. In libero turpis, ornare ac viverra sed, consectetur quis lectus. Curabitur a dapibus
+                        nibh.
+                    </div>
+                    <div class="project-link">
+                        LINK
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-container w3-card-4 w3-margin ">
+                    <img src="img_snowtops.jpg" alt="Norway" style="width:100%" />
+                    <div class="w3-container  w3-center project-title">
+                        <p class="bold">The Italian / Austrian Alps</p>
+                    </div>
+                    <div class="project-description">
+                        et nisl. Vestibulum ac maximus arcu. Ut at tincidunt risus. Aliquam vel diam rhoncus, efficitur tortor ac,
+                        efficitur risus. Cras interdum eget felis in ullamcorper. Suspendisse ac magna rutrum, pharetra urna vitae,
+                        condimentum libero. In libero turpis, ornare ac viverra sed, consectetur quis lectus. Curabitur a dapibus
+                        nibh.
+                    </div>
+                    <div class="project-link">
+                        LINK
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
 
 </main>
@@ -178,5 +275,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/social.js" defer></script>
+
+<script>
+    let displayDetails = function (id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") === -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
 </body>
 </html>

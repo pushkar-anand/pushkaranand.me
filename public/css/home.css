@@ -277,4 +277,7 @@ label a {
     border-radius: 10px;
 }
 
-
+.bold
+{
+    font-weight: bold;
+}
