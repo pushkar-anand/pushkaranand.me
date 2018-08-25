@@ -5,3 +5,35 @@
    RewriteCond %{REQUEST_FILENAME} !-d
    RewriteRule ^(.+)$ /index.php/$1 [L,QSA]
 </IfModule>
+
+<IfModule mod_deflate>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+AddOutputFilterByType DEFLATE application/javascript application/x-httpd-php application/json application/manifest+json
+
+AddOutputFilterByType DEFLATE image/png image/jpg image/jpeg image/svg+xml image/webp
+AddOutputFilterByType DEFLATE image/vnd.microsoft.icon image/x-icon
+
+AddOutputFilterByType DEFLATE font/ttf font/woff font/woff2 font/eot application/font-sfnt
+AddOutputFilterByType DEFLATE application/x-font-opentype application/vnd.ms-fontobject application/x-font-truetype
+AddOutputFilterByType DEFLATE application/font-woff application/x-font-ttf
+</IfModule>
+
+<IfModule mod_expires.c>
+# Enable expirations
+ExpiresActive On
+# Default directive
+ExpiresDefault "access plus 6 months"
+# My favicon
+ExpiresByType image/x-icon "access plus 3 months"
+# Images
+ExpiresByType image/gif "access plus 60 days"
+ExpiresByType image/png "access plus 60 days"
+ExpiresByType image/jpg "access plus 60 days"
+ExpiresByType image/jpeg "access plus 60 days"
+# CSS
+ExpiresByType text/css "access plus 60 days"
+# Javascript
+ExpiresByType application/javascript "access plus 60 days"
+#html
+ExpiresByType text/html "access plus 1 minute"
+</IfModule>
