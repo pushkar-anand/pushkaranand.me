@@ -308,3 +308,28 @@ h2.intro
 {
     color: rgba(0, 0, 0, 0.71);
 }
+
+
+.persist{
+    position: fixed;
+    bottom: 3px;
+    right: 15px;
+    color: #3cb4da;
+    font-size: 40px;
+    display: none;
+}
+.top
+{
+    text-shadow: 2px 2px 2px #af7d58;
+}
+.persist a:hover{
+    color: #83a3a8;
+}
+
+footer{
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid #FFFFFF;
+    background: #28363f;
+}
