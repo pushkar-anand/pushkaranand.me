@@ -17,7 +17,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
     font-family: "Cutive Mono", serif;
-    background: #CCC;
+    background: #FFFFFF;
     overflow-x: hidden;
 }
 
@@ -264,24 +264,47 @@ label a {
     padding-top: 15px;
 }
 
-.skill-list
+#skills {
+    background: url("../images/skill-bg.jpg") no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+h2.intro
 {
+    font-family: 'Calligraffitti';
+    font-size:35px;
+}
+.sejal
+{
+    font-family: 'Asul';
+    font-size: 50px;
+}
+
+.skill-list {
     text-align: center;
 }
 
-.skill-list h3
-{
-    padding: 5px;
-    margin-top: 10px;
-    background: rgba(0, 188, 212, 0.44);
-    border-radius: 10px;
+.skill-list h3 {
+
 }
 
-.bold
-{
+.bold {
     font-weight: bold;
 }
-.project
-{
+
+#projects {
+    background: url("../images/skill-bg.jpg") repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+.project {
+    background: #00838f;
     min-height: 550px;
+}
+.link{
+    background: transparent ;
+}
+.link:hover
+{
+    color: rgba(0, 0, 0, 0.71);
 }

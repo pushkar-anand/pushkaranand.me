@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="/css/w3.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Asul|Calligraffitti' rel='stylesheet'>
     <link href="/css/home.css" rel="stylesheet" type="text/css"/>
 
 </head>
@@ -50,13 +51,13 @@
                 <a href='#about'>About<span>who am i</span></a>
             </li>
             <li>
-                <a href='#'>Experience<span>past experiences</span></a>
+                <a href='#experience'>Experience<span>past experiences</span></a>
             </li>
             <li>
-                <a href='#'>Projects<span>my personal projects</span></a>
+                <a href='#projects'>Projects<span>my personal projects</span></a>
             </li>
             <li>
-                <a href='#'>Contact<span>send me a word</span></a>
+                <a href='#contact'>Contact<span>send me a word</span></a>
             </li>
         </ul>
     </nav>
@@ -94,14 +95,11 @@
             tellus.</p>
     </div>
 
-    <br/><br/><br/><br/>
-
     <div class="w3-container w3-section" id="skills">
-        <h2>My Passionate SKILLS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, nulla quis ornare egestas, odio
-            lectus
-            vehicula nisi, quis volutpat tellus mi vitae quam. Integer sit amet elit luctus ante aliquet porttitor sit
-            amet</p>
+       <br/>
+        <h2 class="intro">My Passionate </h2>
+        <span class="sejal">SKILLS</span>
+
         <br/>
 
         <div class="w3-row" id="wrapper">
@@ -148,13 +146,13 @@
                 <h3>Oauth 2.0</h3>
             </div>
         </div>
-
+<br/> <br/><br/>
     </div>
 
-    <br/><br/><br/><br/>
 
     <div class="w3-container w3-white w3-section" id="experience">
-        <h2>My Past EXPERIENCES</h2>
+        <h2 class="intro">My Past</h2>
+        <span class="sejal">EXPERIENCES</span>
         <div class="w3-row">
             <div class="w3-half ">
 
@@ -207,8 +205,8 @@
 
     <div class="w3-container w3-section" id="projects">
 
-        <h2>My Projects</h2>
-
+        <h2 class="intro">My priceless</h2>
+<span class="sejal">PROJECTS</span>
     </div>
 
 </main>
@@ -236,14 +234,14 @@
         for (let i = 0; i < projects.length; i++) {
             count++;
             let s = '<div class="w3-third">';
-            s += '<div class="w3-container w3-card-4 w3-yellow w3-margin project">';
+            s += '<div class="w3-container w3-card-4 w3-margin project">';
             s += '<img class="project-image" src="/images/transparent.png" title="' + projects[i].name + '" style="width:100%;background:url(\''+  projects[i].img +'\') no-repeat; background-size: cover;background-position: top" />';
             s += '<div class="w3-container w3-center project-title"> <p class="bold">' + projects[i].name + '</p></div>';
             s += '<div class="project-description">' + projects[i].info + '</div><br/>';
-            s += '<div class="w3-row"><div class="w3-half"><div class="w3-center w3-blue w3-margin project-link"><a target="_blank" title="Go to link" href="' + projects[i].link + '" ><i class="fas fa-link" style="font-size: 30px;"></i></a></div></div>';
+            s += '<div class="w3-row"><div class="w3-half"><div class="w3-center w3-margin project-link link"><a target="_blank" title="Go to link" href="' + projects[i].link + '" ><i class="fas fa-link" style="font-size: 30px;"></i></a></div></div>';
 
             if (projects[i].hasOwnProperty('repo')) {
-                s += '<div class="w3-half"><div class="w3-center w3-blue w3-margin project-repo"><a target="_blank" title="Go to repo" href="' + projects[i].repo + '"><i class="fab fa-github" style="font-size: 30px;"></i></a></div></div></div>';
+                s += '<div class="w3-half"><div class="w3-center w3-margin project-repo link"><a target="_blank" title="Go to repo" href="' + projects[i].repo + '"><i class="fab fa-github" style="font-size: 30px;"></i></a></div></div></div>';
             }else
             {
                 s += '<div class="w3-half w3-center"></div></div>'
