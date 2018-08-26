@@ -31,11 +31,13 @@
     <!--OGs-->
     <meta property="og:image:width" content="279">
     <meta property="og:image:height" content="279">
-    <meta property="og:description" content="A programmer trying to create a mark on the world. Currently pursuing his engineering in computer science he wishes to do something exciting in his life.">
+    <meta property="og:description"
+          content="A programmer trying to create a mark on the world. Currently pursuing his engineering in computer science he wishes to do something exciting in his life.">
     <meta property="og:title" content="Pushkar Anand: The geek who codes">
     <meta property="og:url" content="https://pushkaranand.me">
     <meta property="og:image" content="https://pushkaranand.me/images/og/og-image.jpg">
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <header id="top">
@@ -237,8 +239,62 @@
     </div>
 
 
-    <div class="w3-section dark-bg" id="contact">
+    <div class="w3-margin-top dark-bg" id="contact">
+        <div class="w3-container">
+            <h2 class="intro">Get in touch</h2>
+            <span class="sejal">Let's do something great together.</span>
 
+            <br/><br/>
+
+            <div class="w3-row">
+                <div class="w3-col s12 m6">
+
+                    <div class="w3-container w3-card-4">
+                        <br/>
+                        <form class="contact-form">
+
+                            <label for="inputName">
+                                <input type="text" name="name" class="w3-input w3-round-large" id="inputName"
+                                       placeholder="Your Name" required/>
+                            </label><br/>
+
+                            <label for="inputEmail">
+                                <input type="email" name="email" class="w3-input w3-round-large" id="inputEmail"
+                                       placeholder="abc@xyz.com" required/>
+                            </label><br/>
+
+                            <label for="inputSubject">
+                                <input type="text" name="subject" class="w3-input w3-round-large" id="inputSubject"
+                                       placeholder="Subject" required/>
+                            </label><br/>
+
+                            <label for="inputMsg">
+                                <textarea name="message" class="w3-input w3-round-large" id="inputMsg" placeholder="Your Message" required></textarea>
+                            </label><br/>
+
+                            <div class="g-recaptcha" data-sitekey="6Lf6fmwUAAAAAG4ZouHlBHg7uBZqPwuU9onaHwn7"></div>
+
+                            <button class="w3-btn w3-blue w3-right">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="w3-col s12 m6">
+                    <br/>
+                    <br/>
+                    <div class="w3-margin">
+                        <h3>CONTACT INFO</h3>
+                        <p class="email"><i class="fas fa-at"></i>&nbsp;anandpushkar088@gmail.com</p>
+                        <br/>
+                        <h3>FOLLOW ME</h3>
+                        <div class="social" id="footer-social">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 </main>
@@ -268,13 +324,12 @@
         }
     };
 
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         let scrollTop = $(this).scrollTop();
 
-        if(scrollTop<150) {
+        if (scrollTop < 150) {
             $('.persist').hide();
-        }else
-        {
+        } else {
             $('.persist').show()
         }
     });
