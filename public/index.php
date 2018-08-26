@@ -9,7 +9,7 @@ $route = new \EasyRoute\Route();
 try{
 
     $route->addMatch('GET', '/', $home_view);
-    $route->addMatch('POST', "/contact", $contact_mail);
+    $route->addMatch('POST', '/contact', $contact_mail);
 
     $route->execute();
 
