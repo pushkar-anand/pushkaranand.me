@@ -7,6 +7,12 @@ $route = new \EasyRoute\Route();
 
 try{
     $route->addMatch('GET', '/', $home_view);
+    $route->addMatch('POST', "/contact", function ()
+    {
+
+    });
+
+    $route->execute();
 
 }catch (Exception $exception)
 {

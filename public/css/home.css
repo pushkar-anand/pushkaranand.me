@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-family: "Cutive Mono", serif;
+    background: #FFFFFF;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg") no-repeat;
+    background-size: cover;
+    height: 700px;
+    color: white;
+}
+
+header h1 {
+    color: #82BC00;
+}
+
+#header-text {
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+#side-nav {
+    text-align: left;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 60%;
+    right: 0;
+    text-transform: uppercase;
+}
+
+#side-nav ul {
+    list-style: none;
+}
+
+#side-nav li {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+}
+
+#side-nav li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#side-nav a {
+    display: block;
+    text-decoration: none;
+    line-height: inherit;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 0.8rem 4rem 0.8rem 2rem;
+}
+
+#side-nav span {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: lowercase;
+    font-size: small;
+    font-weight: normal;
+}
+
+/* If the screen size is 700px wide or less, hide the element */
+@media only screen and (max-width: 700px) {
+    #side-nav {
+        display: none;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 4.4rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 5.2rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+label .menu {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    /*background: #FFF;*/
+    /*border-radius: 50% 50% 50% 50%;*/
+    transition: .5s ease-in-out;
+    /*box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;*/
+    cursor: pointer;
+}
+
+label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+label .hamburger:before {
+    top: -10px;
+}
+
+label .hamburger:after {
+    bottom: -10px;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked + .menu {
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 0;
+    background: white;
+}
+
+label input:checked + .menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: black;
+}
+
+label input:checked + .menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+    background: black;
+}
+
+label input:checked + .menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+    background: black;
+}
+
+label input:checked + .menu + ul {
+    opacity: 1;
+}
+
+label ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .25s 0s ease-in-out;
+}
+
+label a {
+    margin-bottom: 1em;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+/*h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}*/
+
+#top-social {
+    text-align: left;
+    font-size: 48px;
+    position: absolute;
+    bottom: 5%;
+    left: 10px
+}
+
+#footer-social{
+    font-size: 25px;
+}
+
+.social-icon {
+    padding: 5px 15px 0 5px;
+}
+
+.social a {
+    color: #ffffff;
+}
+
+.social a:hover
+{
+    color: #515151;
+}
+
+#about {
+    display: block;
+    padding: 5px;
+    background: white;
+}
+
+#about p {
+    padding-top: 15px;
+}
+
+.dark-bg{
+    background: url("../images/skill-bg.jpg") no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+h2.intro
+{
+    font-family: 'Calligraffitti';
+    font-size:35px;
+}
+.sejal
+{
+    font-family: 'Asul';
+    font-size: 50px;
+}
+
+.skill-list {
+    text-align: center;
+}
+
+.skill-list h3 {
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#projects {
+    background: url("../images/skill-bg.jpg") repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+.project {
+    background: #00838f;
+    min-height: 550px;
+}
+.link{
+    background: transparent ;
+}
+.link:hover
+{
+    color: rgba(0, 0, 0, 0.71);
+}
+
+
+.persist{
+    position: fixed;
+    bottom: 3px;
+    right: 15px;
+    color: #3cb4da;
+    font-size: 40px;
+    display: none;
+}
+.top
+{
+    text-shadow: 2px 2px 2px #af7d58;
+}
+.persist a:hover{
+    color: #83a3a8;
+}
+
+footer{
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #FFFFFF;
+    background: #28363f;
+}
