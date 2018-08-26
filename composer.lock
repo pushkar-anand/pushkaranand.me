@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f90f0457775e046b267df929f779e0da",
-    "content-hash": "592b8d047a98bb1d50a9c396291be698",
+    "hash": "c44710fe975d93d3e286df820a23efff",
+    "content-hash": "2cbd9c879c23e94cc3d1c83aec9a14a9",
     "packages": [
         {
             "name": "pushkar/easy-mail",
@@ -145,7 +145,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "ext-json": "*"
     },
     "platform-dev": []
 }
