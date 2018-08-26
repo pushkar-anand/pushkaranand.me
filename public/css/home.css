@@ -238,7 +238,7 @@ label a {
     text-align: center;
 }*/
 
-#social {
+#top-social {
     text-align: left;
     font-size: 48px;
     position: absolute;
@@ -246,12 +246,21 @@ label a {
     left: 10px
 }
 
+#footer-social{
+    font-size: 25px;
+}
+
 .social-icon {
     padding: 5px 15px 0 5px;
 }
 
-#social a {
+.social a {
     color: #ffffff;
+}
+
+.social a:hover
+{
+    color: #515151;
 }
 
 #about {

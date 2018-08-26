@@ -5,6 +5,7 @@ const socialLinks =
         'linkedin': 'https://www.linkedin.com/in/anandpushkar088',
         'stack-overflow': 'https://stackoverflow.com/users/4257791/pushkar',
         'quora': 'https://www.quora.com/profile/Pushkar-Anand-14',
+        'android': 'https://play.google.com/store/apps/dev?id=8597477603129692598',
         'instagram': 'https://instagram.com/pushkar.anand',
         'facebook': 'https://www.facebook.com/anandpushkar088',
 
@@ -18,4 +19,4 @@ for (let key in socialLinks) {
                 '<i class="fab fa-' + key + '"></i></a>';
     }
 }
-$('#social').html(html);
+$('div.social').html(html);
