@@ -264,11 +264,12 @@ label a {
     padding-top: 15px;
 }
 
-#skills {
+.dark-bg{
     background: url("../images/skill-bg.jpg") no-repeat;
     background-size: cover;
     color: #FFFFFF;
 }
+
 h2.intro
 {
     font-family: 'Calligraffitti';
