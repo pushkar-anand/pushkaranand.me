@@ -311,6 +311,17 @@ h2.intro
     background: #00838f;
     min-height: 550px;
 }
+
+.project-title
+{
+
+}
+
+.project-description{
+
+}
+
+
 .link{
     background: transparent ;
 }
@@ -334,15 +345,6 @@ h2.intro
 }
 .persist a:hover{
     color: #83a3a8;
-}
-
-.project-title
-{
-
-}
-
-.project-description{
-    
 }
 
 footer{
