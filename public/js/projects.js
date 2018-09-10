@@ -34,6 +34,27 @@ const projects = [
         "repo": "https://github.com/pushkar-anand/php-useful"
     },
     {
+        "name": "apache-virtualhost-generator",
+        "info": "Easily create virtual hosts in apache using this script.",
+        "img": "/images/projects/vhost-gen.png",
+        "link": "https://github.com/pushkar-anand/apache-virtualhost-generator",
+        "repo": "https://github.com/pushkar-anand/apache-virtualhost-generator"
+    },
+    {
+        "name": "make-a-note",
+        "info": "This gtk application helps you save some important things without having to switch to a different app. Simply start this app and use the icon in the status bar to add and view notes",
+        "img": "/images/projects/make-a-note.png",
+        "link": "https://github.com/pushkar-anand/make-a-note",
+        "repo": "https://github.com/pushkar-anand/make-a-note"
+    },
+    {
+        "name": "wallpaper-changer",
+        "info": "Changes wallpaper automatically from a preset folder of wallpapers for gnome desktops.",
+        "img": "/images/projects/wallpaper-changer.png",
+        "link": "https://github.com/pushkar-anand/wallpaper-changer",
+        "repo": "https://github.com/pushkar-anand/wallpaper-changer"
+    },
+    {
         "name": "Birthday Card",
         "info": "A birthday Card created with pure CSS3 and HTML. No JS To run this card you need to have a browser with full CSS3 support.",
         "img": "/images/projects/card.png",
