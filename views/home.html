@@ -245,7 +245,7 @@
 
                     <div class="w3-container w3-card-4">
                         <br/>
-                        <form class="contact-form">
+                        <form class="contact-form" id="contact-form">
 
                             <label for="inputName">
                                 <input type="text" name="name" class="w3-input w3-round-large" id="inputName"
@@ -308,8 +308,10 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert@2.1.0/dist/sweetalert.min.js" async></script>
 <script src="/js/social.js" async defer></script>
-<script src="/js/projects.js"></script>
+<script src="/js/projects.js" async></script>
+<script src="/js/forms.js" async></script>
 
 <script>
     const displayDetails = function (id) {
@@ -365,6 +367,8 @@
             }
         }
         $('#projects').append(projectsHTML);
+
+        submit('contact-form');
     });
 </script>
 </body>
