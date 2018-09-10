@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: blog/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/
+Disallow: /blog/wp-content/plugins/
+Disallow: /blog/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/
 Allow: /
