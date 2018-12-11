@@ -34,9 +34,10 @@ let jqueryErr = function(jqXHR, exception) {
               type: 'post',
               success: function (response) {
                   console.log(response);
+                  grecaptcha.reset();
                   if (response.code === 200) {
                       swal(response.title, response.msg, "success");
-                      formSubmit[0].reset();
+                      formSubmit[0].reset()
                   }
                   else {
                       swal(response.title, response.msg, "error");
@@ -44,6 +45,7 @@ let jqueryErr = function(jqXHR, exception) {
               },
               error: function (jqXHR, exception) {
                   jqueryErr(jqXHR, exception);
+                  grecaptcha.reset();
               }
           });
     });
