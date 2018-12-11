@@ -5,6 +5,7 @@ use EasyMail\Mail;
 use PhpUseful\EasyHeaders;
 use PhpUseful\Functions;
 
+$resp = null;
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])) {
     $name = Functions::escape_input($_POST['name']);
     $email = Functions::escape_input($_POST['email']);
@@ -32,8 +33,11 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) 
         $resp = array("code" => 200, "title" => "Error", "msg" => $exception);
     }
 
-    EasyHeaders::json_header();
-    echo json_encode($resp);
 } else {
     $resp = array("code" => 500, "title" => "Mail not sent", "msg" => "Fill in all fields.");
 }
+
+EasyHeaders::json_header();
+$resp = json_encode($resp);
+error_log('Response: ', $resp);
+echo $resp;

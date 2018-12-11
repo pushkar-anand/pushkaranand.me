@@ -34,6 +34,7 @@ let jqueryErr = function(jqXHR, exception) {
               data: formData,
               type: 'post',
               success: function (response) {
+                  console.log(response);
                   if (response.code === 200) {
                       swal(response.title, response.msg, "success");
                       formSubmit[0].reset();
