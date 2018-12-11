@@ -7,10 +7,10 @@ use PhpUseful\Functions;
 
 $resp = null;
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])) {
-    $name = Functions::escape_input($_POST['name']);
-    $email = Functions::escape_input($_POST['email']);
-    $subject = Functions::escape_input($_POST['subject']);
-    $msg = Functions::escape_input($_POST['message']);
+    $name = Functions::escapeInput($_POST['name']);
+    $email = Functions::escapeInput($_POST['email']);
+    $subject = Functions::escapeInput($_POST['subject']);
+    $msg = Functions::escapeInput($_POST['message']);
 
     try {
 
