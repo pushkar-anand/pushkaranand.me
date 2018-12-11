@@ -1,10 +1,10 @@
 const projects = [
     {
-        "name": "Simple Budget",
+        "name": "Spendo",
         "info": "Easily manage all your money. Track your spends and earnings. Tag your transactions. Add transaction specific notes.",
         "img": "/images/projects/simple-budget.png",
-        "link": "http://bit.ly/simple-budget-app",
-        "repo": "https://github.com/pushkar-anand/simple-budget"
+        "link": "http://bit.ly/spendo",
+        "repo": "https://github.com/pushkar-anand/spendo"
     },
     {
         "name": "CopyMean",
