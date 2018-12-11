@@ -23,15 +23,14 @@ let jqueryErr = function(jqXHR, exception) {
       let formSubmit = $("form#"+formID);
       formSubmit.submit(function(e) {
       e.preventDefault();
-      let formData = new FormData(this);
-      console.log("Form Submitted");
+          console.log("Form Submitted.");
       $.ajax(
           {
               url: '/contact',
               dataType: 'json',
               cache: false,
               processData: false,
-              data: formData,
+              data: formSubmit.serialize(),
               type: 'post',
               success: function (response) {
                   console.log(response);
