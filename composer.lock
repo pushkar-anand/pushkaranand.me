@@ -1,24 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+      "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "c44710fe975d93d3e286df820a23efff",
-    "content-hash": "2cbd9c879c23e94cc3d1c83aec9a14a9",
+  "content-hash": "3ba161acdc91b457d96d738ef51c917b",
     "packages": [
         {
             "name": "pushkar/easy-mail",
-            "version": "v1.4.7",
+          "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pushkar-anand/easy-mail.git",
-                "reference": "e3b92dac7fc736ce64d5662357264116d8966b4a"
+              "reference": "28a05d95cc1832142c8ca2cbbfdbddefb4aceb55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pushkar-anand/easy-mail/zipball/e3b92dac7fc736ce64d5662357264116d8966b4a",
-                "reference": "e3b92dac7fc736ce64d5662357264116d8966b4a",
+              "url": "https://api.github.com/repos/pushkar-anand/easy-mail/zipball/28a05d95cc1832142c8ca2cbbfdbddefb4aceb55",
+              "reference": "28a05d95cc1832142c8ca2cbbfdbddefb4aceb55",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +49,7 @@
                 "easy",
                 "mailer"
             ],
-            "time": "2018-07-03 14:00:19"
+          "time": "2018-10-05T09:46:04+00:00"
         },
         {
             "name": "pushkar/easy-router",
@@ -95,27 +94,28 @@
                 "easy",
                 "router"
             ],
-            "time": "2018-06-17 15:42:25"
+          "time": "2018-06-17T15:42:25+00:00"
         },
         {
             "name": "pushkar/php-useful",
-            "version": "v0.3.1",
+          "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pushkar-anand/php-useful.git",
-                "reference": "2f8dc2e96457b373c5f5e9bf2fa115b38ddbbe53"
+              "reference": "20626e53d3b6514bf8cd7ff46546f0f79f812697"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pushkar-anand/php-useful/zipball/2f8dc2e96457b373c5f5e9bf2fa115b38ddbbe53",
-                "reference": "2f8dc2e96457b373c5f5e9bf2fa115b38ddbbe53",
+              "url": "https://api.github.com/repos/pushkar-anand/php-useful/zipball/20626e53d3b6514bf8cd7ff46546f0f79f812697",
+              "reference": "20626e53d3b6514bf8cd7ff46546f0f79f812697",
                 "shasum": ""
             },
             "require": {
+              "ext-curl": "*",
                 "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "*"
+              "phpunit/phpunit": "^7"
             },
             "type": "library",
             "autoload": {
@@ -135,7 +135,7 @@
             ],
             "description": "Contains various classes and functions to many common tasks in PHP.",
             "homepage": "https://github.com/pushkar-anand/php-useful",
-            "time": "2018-06-08 09:49:38"
+          "time": "2018-10-09T08:47:46+00:00"
         }
     ],
     "packages-dev": [],
