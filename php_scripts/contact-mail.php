@@ -16,7 +16,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) 
 
         $mail = new Mail('anandpushkar088@gmail.com');
         $mail->addReplyTo($email, $name);
-        $mail->setFrom('contact@pushkaranand.me', $name);
+        $mail->setFrom('no-reply@pushkaranand.me', "My Website");
         $mail->isHtml(false);
         $mail->setPriority(1);
         $mail->setSubject($subject);
