@@ -1,6 +1,6 @@
 const socialLinks =
     {
-        'twitter': 'https://twitter.com/Pushkar_Anand_0',
+        'twitter': 'https://twitter.com/_anandpushkar',
         'github': 'https://github.com/pushkar-anand',
         'linkedin': 'https://www.linkedin.com/in/anandpushkar088',
         'stack-overflow': 'https://stackoverflow.com/users/4257791/pushkar',
