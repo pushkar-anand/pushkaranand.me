@@ -6,7 +6,7 @@ const socialLinks =
         'stack-overflow': 'https://stackoverflow.com/users/4257791/pushkar',
         'quora': 'https://www.quora.com/profile/Pushkar-Anand-14',
         'android': 'https://play.google.com/store/apps/dev?id=8597477603129692598',
-        'instagram': 'https://instagram.com/pushkar.anand',
+        'instagram': 'https://instagram.com/anandpushkar088',
         'facebook': 'https://www.facebook.com/anandpushkar088',
 
     };
